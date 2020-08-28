@@ -54,11 +54,17 @@ extension HomeModuleViewController: HomeModuleView {
 // MARK: - UITableViewDataSource
 
 extension HomeModuleViewController: UITableViewDataSource {
-  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+  func tableView(
+    _ tableView: UITableView,
+    numberOfRowsInSection section: Int
+  ) -> Int {
     cities.count
   }
 
-  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+  func tableView(
+    _ tableView: UITableView,
+    cellForRowAt indexPath: IndexPath
+  ) -> UITableViewCell {
     let cell: UITableViewCell
     if let dequeuedCell = tableView
       .dequeueReusableCell(withIdentifier: Constants.cellIdentifier) {
