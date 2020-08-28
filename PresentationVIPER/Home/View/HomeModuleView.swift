@@ -2,5 +2,5 @@
 
 protocol HomeModuleView: AnyObject {
   func update(cities: [City])
-  func showError()
+  func showError() 
 }
