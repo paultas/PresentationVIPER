@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A1CDF7C24F8D8A500EC7B85 /* HomeModuleBuilding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CDF6B24F8D8A500EC7B85 /* HomeModuleBuilding.swift */; };
-		8A1CDF7D24F8D8A500EC7B85 /* HomeModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CDF6C24F8D8A500EC7B85 /* HomeModuleBuilder.swift */; };
 		8A1CDF7E24F8D8A500EC7B85 /* HomeModuleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A1CDF6E24F8D8A500EC7B85 /* HomeModuleViewController.xib */; };
 		8A1CDF7F24F8D8A500EC7B85 /* HomeModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CDF6F24F8D8A500EC7B85 /* HomeModuleViewController.swift */; };
 		8A1CDF8124F8D8A500EC7B85 /* HomeModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CDF7224F8D8A500EC7B85 /* HomeModulePresenter.swift */; };
@@ -27,8 +25,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8A1CDF6B24F8D8A500EC7B85 /* HomeModuleBuilding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModuleBuilding.swift; sourceTree = "<group>"; };
-		8A1CDF6C24F8D8A500EC7B85 /* HomeModuleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModuleBuilder.swift; sourceTree = "<group>"; };
 		8A1CDF6E24F8D8A500EC7B85 /* HomeModuleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeModuleViewController.xib; sourceTree = "<group>"; };
 		8A1CDF6F24F8D8A500EC7B85 /* HomeModuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModuleViewController.swift; sourceTree = "<group>"; };
 		8A1CDF7224F8D8A500EC7B85 /* HomeModulePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModulePresenter.swift; sourceTree = "<group>"; };
@@ -59,15 +55,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8A1CDF6A24F8D8A500EC7B85 /* Builder */ = {
-			isa = PBXGroup;
-			children = (
-				8A1CDF6B24F8D8A500EC7B85 /* HomeModuleBuilding.swift */,
-				8A1CDF6C24F8D8A500EC7B85 /* HomeModuleBuilder.swift */,
-			);
-			path = Builder;
-			sourceTree = "<group>";
-		};
 		8A1CDF6D24F8D8A500EC7B85 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,7 +174,6 @@
 		8A8A7DFD24F8D6FF0055EF23 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				8A1CDF6A24F8D8A500EC7B85 /* Builder */,
 				8A1CDF7724F8D8A500EC7B85 /* Interactor */,
 				8A1CDF7424F8D8A500EC7B85 /* Router */,
 				8A1CDF7124F8D8A500EC7B85 /* Presenter */,
@@ -267,7 +253,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A1CDF7D24F8D8A500EC7B85 /* HomeModuleBuilder.swift in Sources */,
 				8A1CDF9724F8DC5D00EC7B85 /* LocationProvider.swift in Sources */,
 				8A8A7DEA24F8D6960055EF23 /* AppDelegate.swift in Sources */,
 				8A1CDF8B24F8DA5D00EC7B85 /* City.swift in Sources */,
@@ -275,7 +260,6 @@
 				8A1CDF7F24F8D8A500EC7B85 /* HomeModuleViewController.swift in Sources */,
 				8A1CDF9424F8DC3E00EC7B85 /* LocationProviding.swift in Sources */,
 				8A1CDF8624F8D8A500EC7B85 /* HomeModuleInteractor.swift in Sources */,
-				8A1CDF7C24F8D8A500EC7B85 /* HomeModuleBuilding.swift in Sources */,
 				8A1CDF9924F8DCB000EC7B85 /* Location.swift in Sources */,
 				8A8A7DEC24F8D6960055EF23 /* SceneDelegate.swift in Sources */,
 				8A1CDF8324F8D8A500EC7B85 /* HomeModuleRouter.swift in Sources */,
