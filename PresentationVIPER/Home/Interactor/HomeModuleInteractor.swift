@@ -13,9 +13,9 @@ final class HomeModuleInteractor {
   }
 }
 
-// MARK: - HomeModuleInteracting
+// MARK: - 
 
-extension HomeModuleInteractor: HomeModuleInteracting {
+extension HomeModuleInteractor {
   func fetchCityList(
     success: (_ cities: [City]) -> Void,
     failure: (_ error: Error) -> Void

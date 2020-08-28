@@ -1,22 +1,22 @@
 // Copyright © Delivery Hero SE. All rights reserved.
 
 final class HomeModulePresenter {
-  weak var view: HomeModuleView?
-  private let interactor: HomeModuleInteracting
-  private let router: HomeModuleRouting
+  weak var view: HomeModuleViewController?
+  private let interactor: HomeModuleInteractor
+  private let router: HomeModuleRouter
 
   init(
-    interactor: HomeModuleInteracting,
-    router: HomeModuleRouting
+    interactor: HomeModuleInteractor,
+    router: HomeModuleRouter
   ) {
     self.interactor = interactor
     self.router = router
   }
 }
 
-// MARK: - HomeModulePresenting
+// MARK: - 
 
-extension HomeModulePresenter: HomeModulePresenting {
+extension HomeModulePresenter {
   func onViewDidLoad() {}
 
   func fetchCityList() {
@@ -28,5 +28,9 @@ extension HomeModulePresenter: HomeModulePresenting {
         view?.showError()
       }
     )
+  }
+
+  func showCityDetails(withIndex index: Int) {
+    router.showDetails()
   }
 }

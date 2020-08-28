@@ -11,12 +11,8 @@
 		8A1CDF7D24F8D8A500EC7B85 /* HomeModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CDF6C24F8D8A500EC7B85 /* HomeModuleBuilder.swift */; };
 		8A1CDF7E24F8D8A500EC7B85 /* HomeModuleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A1CDF6E24F8D8A500EC7B85 /* HomeModuleViewController.xib */; };
 		8A1CDF7F24F8D8A500EC7B85 /* HomeModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CDF6F24F8D8A500EC7B85 /* HomeModuleViewController.swift */; };
-		8A1CDF8024F8D8A500EC7B85 /* HomeModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CDF7024F8D8A500EC7B85 /* HomeModuleView.swift */; };
 		8A1CDF8124F8D8A500EC7B85 /* HomeModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CDF7224F8D8A500EC7B85 /* HomeModulePresenter.swift */; };
-		8A1CDF8224F8D8A500EC7B85 /* HomeModulePresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CDF7324F8D8A500EC7B85 /* HomeModulePresenting.swift */; };
 		8A1CDF8324F8D8A500EC7B85 /* HomeModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CDF7524F8D8A500EC7B85 /* HomeModuleRouter.swift */; };
-		8A1CDF8424F8D8A500EC7B85 /* HomeModuleRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CDF7624F8D8A500EC7B85 /* HomeModuleRouting.swift */; };
-		8A1CDF8524F8D8A500EC7B85 /* HomeModuleInteracting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CDF7824F8D8A500EC7B85 /* HomeModuleInteracting.swift */; };
 		8A1CDF8624F8D8A500EC7B85 /* HomeModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CDF7924F8D8A500EC7B85 /* HomeModuleInteractor.swift */; };
 		8A1CDF8B24F8DA5D00EC7B85 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CDF8A24F8DA5D00EC7B85 /* City.swift */; };
 		8A1CDF8E24F8DBB600EC7B85 /* CityRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CDF8D24F8DBB600EC7B85 /* CityRepositoryProtocol.swift */; };
@@ -35,12 +31,8 @@
 		8A1CDF6C24F8D8A500EC7B85 /* HomeModuleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModuleBuilder.swift; sourceTree = "<group>"; };
 		8A1CDF6E24F8D8A500EC7B85 /* HomeModuleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeModuleViewController.xib; sourceTree = "<group>"; };
 		8A1CDF6F24F8D8A500EC7B85 /* HomeModuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModuleViewController.swift; sourceTree = "<group>"; };
-		8A1CDF7024F8D8A500EC7B85 /* HomeModuleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModuleView.swift; sourceTree = "<group>"; };
 		8A1CDF7224F8D8A500EC7B85 /* HomeModulePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModulePresenter.swift; sourceTree = "<group>"; };
-		8A1CDF7324F8D8A500EC7B85 /* HomeModulePresenting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModulePresenting.swift; sourceTree = "<group>"; };
 		8A1CDF7524F8D8A500EC7B85 /* HomeModuleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModuleRouter.swift; sourceTree = "<group>"; };
-		8A1CDF7624F8D8A500EC7B85 /* HomeModuleRouting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModuleRouting.swift; sourceTree = "<group>"; };
-		8A1CDF7824F8D8A500EC7B85 /* HomeModuleInteracting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModuleInteracting.swift; sourceTree = "<group>"; };
 		8A1CDF7924F8D8A500EC7B85 /* HomeModuleInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModuleInteractor.swift; sourceTree = "<group>"; };
 		8A1CDF8A24F8DA5D00EC7B85 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		8A1CDF8D24F8DBB600EC7B85 /* CityRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityRepositoryProtocol.swift; sourceTree = "<group>"; };
@@ -79,7 +71,6 @@
 		8A1CDF6D24F8D8A500EC7B85 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8A1CDF7024F8D8A500EC7B85 /* HomeModuleView.swift */,
 				8A1CDF6F24F8D8A500EC7B85 /* HomeModuleViewController.swift */,
 				8A1CDF6E24F8D8A500EC7B85 /* HomeModuleViewController.xib */,
 			);
@@ -89,7 +80,6 @@
 		8A1CDF7124F8D8A500EC7B85 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				8A1CDF7324F8D8A500EC7B85 /* HomeModulePresenting.swift */,
 				8A1CDF7224F8D8A500EC7B85 /* HomeModulePresenter.swift */,
 			);
 			path = Presenter;
@@ -99,7 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				8A1CDF7524F8D8A500EC7B85 /* HomeModuleRouter.swift */,
-				8A1CDF7624F8D8A500EC7B85 /* HomeModuleRouting.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -107,7 +96,6 @@
 		8A1CDF7724F8D8A500EC7B85 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				8A1CDF7824F8D8A500EC7B85 /* HomeModuleInteracting.swift */,
 				8A1CDF7924F8D8A500EC7B85 /* HomeModuleInteractor.swift */,
 			);
 			path = Interactor;
@@ -280,13 +268,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A1CDF7D24F8D8A500EC7B85 /* HomeModuleBuilder.swift in Sources */,
-				8A1CDF8024F8D8A500EC7B85 /* HomeModuleView.swift in Sources */,
 				8A1CDF9724F8DC5D00EC7B85 /* LocationProvider.swift in Sources */,
 				8A8A7DEA24F8D6960055EF23 /* AppDelegate.swift in Sources */,
-				8A1CDF8424F8D8A500EC7B85 /* HomeModuleRouting.swift in Sources */,
-				8A1CDF8224F8D8A500EC7B85 /* HomeModulePresenting.swift in Sources */,
 				8A1CDF8B24F8DA5D00EC7B85 /* City.swift in Sources */,
-				8A1CDF8524F8D8A500EC7B85 /* HomeModuleInteracting.swift in Sources */,
 				8A1CDF9024F8DBBC00EC7B85 /* CityRepository.swift in Sources */,
 				8A1CDF7F24F8D8A500EC7B85 /* HomeModuleViewController.swift in Sources */,
 				8A1CDF9424F8DC3E00EC7B85 /* LocationProviding.swift in Sources */,
