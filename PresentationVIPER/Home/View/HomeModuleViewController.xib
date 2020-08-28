@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeModuleViewController" customModule="PresentationVIPER" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="e5g-u8-d1K" id="67l-fg-N6y"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EcV-HI-9Rc">
+                    <rect key="frame" x="8" y="52" width="359" height="30"/>
+                    <state key="normal" title="Refresh Cities"/>
+                    <connections>
+                        <action selector="refreshButtonTapped" destination="-1" eventType="touchUpInside" id="Qr1-Rv-B6h"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e5g-u8-d1K">
+                    <rect key="frame" x="0.0" y="82" width="375" height="730"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="8tZ-EZ-StK"/>
+                        <outlet property="delegate" destination="-1" id="Cf4-eK-Zeb"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Umh-er-q9n" firstAttribute="trailing" secondItem="e5g-u8-d1K" secondAttribute="trailing" id="BWS-Na-4TZ"/>
+                <constraint firstItem="EcV-HI-9Rc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="EkK-7N-29G"/>
+                <constraint firstItem="EcV-HI-9Rc" firstAttribute="top" secondItem="Umh-er-q9n" secondAttribute="top" constant="8" id="LWe-Sj-cmC"/>
+                <constraint firstItem="e5g-u8-d1K" firstAttribute="top" secondItem="EcV-HI-9Rc" secondAttribute="bottom" id="VeO-Pz-xGn"/>
+                <constraint firstItem="e5g-u8-d1K" firstAttribute="leading" secondItem="Umh-er-q9n" secondAttribute="leading" id="Ztp-9I-KNx"/>
+                <constraint firstAttribute="trailing" secondItem="EcV-HI-9Rc" secondAttribute="trailing" constant="8" id="ikk-dn-Ndn"/>
+                <constraint firstAttribute="bottom" secondItem="e5g-u8-d1K" secondAttribute="bottom" id="qam-jX-Dtf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Umh-er-q9n"/>
+            <point key="canvasLocation" x="138" y="154"/>
+        </view>
+    </objects>
+</document>
