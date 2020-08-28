@@ -19,7 +19,7 @@ final class HomeModulePresenter {
 extension HomeModulePresenter: HomeModulePresenting {
   func onViewDidLoad() {}
 
-  func fetchCityList() {
+  func onDidTapRefresh() {
     interactor.fetchCityList(
       success: { [weak view] cities in
         view?.update(cities: cities)
@@ -30,7 +30,7 @@ extension HomeModulePresenter: HomeModulePresenting {
     )
   }
 
-  func showCityDetails(withIndex index: Int) {
+  func onDidTapCity(withIndex index: Int) {
     router.showDetails()
   }
 }
