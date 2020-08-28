@@ -7,7 +7,7 @@ final class HomeModuleViewController: UIViewController {
     static let cellIdentifier = "homeCellIdentifier"
   }
 
-  private let presenter: HomeModulePresenter
+  private let presenter: HomeModulePresenting
 
   @IBOutlet private var tableView: UITableView!
 
@@ -17,7 +17,7 @@ final class HomeModuleViewController: UIViewController {
     fatalError("init(coder:) has not been implemented")
   }
 
-  init(presenter: HomeModulePresenter) {
+  init(presenter: HomeModulePresenting) {
     self.presenter = presenter
     super.init(
       nibName: String(describing: type(of: self)),
@@ -40,9 +40,9 @@ extension HomeModuleViewController {
   }
 }
 
-// MARK: - 
+// MARK: - HomeModuleView
 
-extension HomeModuleViewController {
+extension HomeModuleViewController: HomeModuleView {
   func update(cities: [City]) {
     self.cities = cities
     tableView.reloadData()

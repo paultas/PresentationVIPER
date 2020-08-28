@@ -29,8 +29,8 @@ final class HomeModuleRouter {
   }
 }
 
-// MARK: - 
+// MARK: - HomeModuleRouting
 
-extension HomeModuleRouter {
+extension HomeModuleRouter: HomeModuleRouting {
   func showDetails() {}
 }
