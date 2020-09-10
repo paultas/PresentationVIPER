@@ -35,12 +35,12 @@ final class HomeModuleViewController: UIViewController {
 // MARK: - Actions
 
 extension HomeModuleViewController {
-  @IBAction func refreshButtonTapped() {
+  @IBAction private func refreshButtonTapped() {
     presenter.fetchCityList()
   }
 }
 
-// MARK: - 
+// MARK: -
 
 extension HomeModuleViewController {
   func update(cities: [City]) {
@@ -84,6 +84,8 @@ extension HomeModuleViewController: UITableViewDataSource {
     return cell
   }
 }
+
+// MARK: - UITableViewDelegate
 
 extension HomeModuleViewController: UITableViewDelegate {
   func tableView(
