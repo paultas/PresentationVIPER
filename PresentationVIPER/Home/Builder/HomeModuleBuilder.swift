@@ -2,7 +2,7 @@
 
 import UIKit
 
-final class HomeModuleBuilder {}
+struct HomeModuleBuilder {}
 
 // MARK: - HomeModuleBuilding
 

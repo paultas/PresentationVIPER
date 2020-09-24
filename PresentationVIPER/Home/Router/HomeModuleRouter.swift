@@ -32,5 +32,7 @@ final class HomeModuleRouter {
 // MARK: - 
 
 extension HomeModuleRouter {
-  func showDetails() {}
+  func showDetails() {
+    print("Show city details screen")
+  }
 }
