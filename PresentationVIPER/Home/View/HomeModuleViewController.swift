@@ -11,7 +11,7 @@ final class HomeModuleViewController: UIViewController {
 
   @IBOutlet private var tableView: UITableView!
 
-  private var cities: [City] = []
+  private var cities: [CityViewModel] = []
 
   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
@@ -43,7 +43,7 @@ extension HomeModuleViewController {
 // MARK: - HomeModuleView
 
 extension HomeModuleViewController: HomeModuleView {
-  func update(cities: [City]) {
+  func update(cities: [CityViewModel]) {
     self.cities = cities
     tableView.reloadData()
   }

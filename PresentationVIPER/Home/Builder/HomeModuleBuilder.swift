@@ -19,7 +19,8 @@ extension HomeModuleBuilder: HomeModuleBuilding {
 
     let presenter = HomeModulePresenter(
       interactor: interactor,
-      router: router
+      router: router,
+      mapper: CityViewModelMapper()
     )
 
     let view = HomeModuleViewController(presenter: presenter)
