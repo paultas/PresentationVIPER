@@ -2,6 +2,6 @@
 
 protocol HomeModulePresenting {
   func onViewDidLoad()
-  func fetchCityList()
-  func showCityDetails(withIndex index: Int)
+  func onDidTapRefresh()
+  func onDidSelectCity(withIndex index: Int)
 }

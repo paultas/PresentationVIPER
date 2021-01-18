@@ -36,7 +36,7 @@ final class HomeModuleViewController: UIViewController {
 
 extension HomeModuleViewController {
   @IBAction private func refreshButtonTapped() {
-    presenter.fetchCityList()
+    presenter.onDidTapRefresh()
   }
 }
 
@@ -92,6 +92,6 @@ extension HomeModuleViewController: UITableViewDelegate {
     _ tableView: UITableView,
     didSelectRowAt indexPath: IndexPath
   ) {
-    presenter.showCityDetails(withIndex: indexPath.row)
+    presenter.onDidSelectCity(withIndex: indexPath.row)
   }
 }
